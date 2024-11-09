@@ -5,8 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Closet {
+public class Closet { 
     private File file;
+    String color; // used in serching
+    String clothe; // used in searching
 
 
     public Closet() throws Exception {
@@ -52,7 +54,6 @@ public class Closet {
         String[] arr = new String[count-1];
 
         return arr;
-
     }
 
     // once the array is initialized we start adding data to our arrray line by line.
@@ -123,11 +124,71 @@ public class Closet {
         }
         output.println();
         output.close();
+
+        while(true)
+        {
+            System.out.print("Do you want to search for specific clothes? [y/n] ");
+            // System.out.println(bla_shelf); // help debug
+            String ans = sc.next();
+            sc.nextLine();
+            
+            if (ans.equalsIgnoreCase("n")) {
+                System.out.println("Closet Closed.");
+                break; //
+            }
+
+            if ( ans.equals("y")){
+                System.out.print("Enter clothe name: ");
+                clothe = sc.nextLine();
+    
+                if (clothe.length() >= 3) 
+                {
+                    if (clothe.charAt(2)=='a')
+                    {
+                        search(bla_shelf,clothe,1);
+                    }else if (clothe.charAt(2)=='u')
+                    {
+                        search(blu_shelf,clothe,2);
+                    }else if(clothe.charAt(0)=='G' || clothe.charAt(0)=='g')
+                    {
+                        search(g_shelf,clothe,3);
+                    }else if(clothe.charAt(0)=='W' || clothe.charAt(0)=='w')
+                    {
+                        search(w_shelf,clothe,4);
+                    }          
+                }else{
+                    System.out.println("Clothe name is too short.");
+                }         
+            }
+
+        }
+       
         return obj;
+    }
+
+    public void search(List<String> arr,String item,int shelfNo)
+    {
+        int count = 0;
+    
+        // Loop through the list to check for the item
+        for (String clothe : arr) {
+            // System.out.println("Checking: '" + clothe + "' with length: " + clothe.length());  // helper function for debugging
+            // System.out.println("Item: '" + item + "' with length: " + item.length());          // helper function for debugging
+            if (clothe.trim().replaceAll("\\s+", "").equalsIgnoreCase(item.trim().replaceAll("\\s+", ""))) {
+                count++;
+            }
+        }
+        // Output the result
+        if (count > 0) {
+            System.out.println("The item '" + item + "' is found " + count + " times in Shelf " + shelfNo + " .");
+        } else {
+            System.out.println("The item '" + item + "' is not found.");
+        }
 
     }
 
 
+    
     public static void main(String[] args) throws Exception {
 
         Closet c = new Closet();
