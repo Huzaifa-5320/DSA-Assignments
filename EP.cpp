@@ -52,14 +52,13 @@ string postFix(string infix,Node *&top){
         // if res is equal to '(' directly push it to stack
         if(res==4){
             push(infix[i],top);
-            continue;
         }
         else if (res==3){ // closing bracket ')'
             while(top->data!='(' && top != nullptr){
                 postfix+=pop(top);
             }
-             // to remove ''('
-             pop(top);
+            // to remove ''('
+            pop(top);
         }
         else if (res==0){
             postfix+=infix[i];
@@ -81,6 +80,7 @@ string postFix(string infix,Node *&top){
 int main(){
     Node *top = nullptr;
     string str = "(a+b)*(c-d)";
+    // string str = "((x+y)*z/(w-v))";
     cout<< "POSTFIX STRING: "<< postFix(str,top);
     cout << endl;
     return 0;
