@@ -1,0 +1,33 @@
+Shelf 1: 
+Black Shirt 
+Black Shirt
+black pant 
+Black Shalwar Kameez  
+Black Shalwar Kameez  
+black pant
+Black Shalwar Kameez
+Black Pant
+Black Shirt 
+Black Shalwar Kameez  
+
+Shelf 2: 
+Blue Pant
+Blue Shalwar Kameez 
+Blue Pant
+Blue Shalwar Kameez 
+Blue Shalwar Kameez 
+Blue Shalwar Kameez 
+Blue Pant
+
+Shelf 3:
+Green Shirt 
+Green Shirt 
+Green Shirt 
+
+Shelf 4:
+white pant
+white shirt
+White  Shalwar Kameez 
+White Shirt
+white shirt
+
