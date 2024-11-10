@@ -3,20 +3,22 @@ using namespace std;
 
 int main()
 {
-    int n = 7;
-    int I[n];
-    int S[n];
+    int n = 3;
+    int I[n] = {1,2,3}; // Example initialization for I
+    int S[n] = {4,4,4}; // Example initialization for S
     int sum = 0;
 
-    for (int i = 0; i <= n-1; i++)
+    
+    for (int i = 0; i < n; i++)
     {
         int mul = I[i];
-        for (int j = i + 1; j <= n-1; j++)
+        for (int j = i + 1; j < n; j++)
         {
             mul *= S[j];
-            sum += mul;
         }
-
+        sum += mul;
     }
+
+    cout << "Sum: " << sum << endl;
     return 0;
 }
