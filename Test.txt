@@ -1,25 +1,25 @@
 Black Shirt 
-white pant
+White Pant
 Blue Pant
-Green Shirt 
-Blue Shalwar Kameez 
-Black Shirt
-black pant 
-white shirt
+Green Shirt  
+Blue Shalwar Kameez   
+Black Shirt 
+Black Pant   
+White Shirt
 Black Shalwar Kameez  
 White  Shalwar Kameez 
 Blue Pant
 Black Shalwar Kameez  
 Blue Shalwar Kameez 
 Green Shirt 
-black pant
+Black Pant
 Black Shalwar Kameez
 White Shirt
 Blue Shalwar Kameez 
 Black Pant
 Blue Shalwar Kameez 
 Blue Pant
-white shirt
+White Shirt
 Green Shirt 
 Black Shirt 
 Black Shalwar Kameez  

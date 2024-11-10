@@ -34,9 +34,8 @@ public class Closet {
         System.out.println();
 
     }
-
-
-    // counts the number of lines our input file have in order to initialize array of that length.
+    // counts the number of lines our input file have in order to initialize array of 
+    // that length.
     public String[] count(File file)  throws Exception{
 
         if (!file.exists()) {
@@ -71,8 +70,6 @@ public class Closet {
 
     }
 
-
-
     // once the array is initialized we then sort our array on the basis of color.
     public void sortArray(String[] arr){
 
@@ -88,7 +85,6 @@ public class Closet {
                 w_shelf.add(e);
             }
         }
-
     }
 
     public File writeData() throws Exception {
@@ -172,8 +168,10 @@ public class Closet {
     
         // Loop through the list to check for the item
         for (String clothe : arr) {
-            // System.out.println("Checking: '" + clothe + "' with length: " + clothe.length());  // helper function for debugging
-            // System.out.println("Item: '" + item + "' with length: " + item.length());          // helper function for debugging
+            // helper function for debugging
+            // System.out.println("Checking: '" + clothe + "' with length: " + clothe.length());  
+            // helper function for debugging
+            // System.out.println("Item: '" + item + "' with length: " + item.length());          
             if (clothe.trim().replaceAll("\\s+", "").equalsIgnoreCase(item.trim().replaceAll("\\s+", ""))) {
                 count++;
             }

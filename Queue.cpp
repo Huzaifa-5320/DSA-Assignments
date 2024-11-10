@@ -48,7 +48,7 @@ class Queue{
     int peek(){
          if(front==NULL){
             cout<<"No element in Queue"<<endl;
-            return 1;
+            return -1;
         }
         return front->data;
     }
@@ -69,11 +69,15 @@ int main(){
     q.enQueue(3);
     q.enQueue(4);
     q.enQueue(5);
+    cout << "peek at front of queue: ";
+    cout << q.peek() << endl;
+    cout << "Now we DeQueue..." << endl;
     cout<< q.deQueue() << endl;
     cout<< q.deQueue() << endl;
     cout<< q.deQueue() << endl;
     cout<< q.deQueue() << endl;
     cout<< q.deQueue() << endl;
+    cout << q.peek() << endl;
     // cout<< q.deQueue() << endl; //  will cause Queue underflow
 
     return 0;

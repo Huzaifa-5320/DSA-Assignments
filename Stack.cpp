@@ -3,48 +3,6 @@
 #include<cstring>
 using namespace std;
 
-/*
-//                              *** Stack using Array ***
-struct Stack {
-    static const int MAX = 100; 
-    int arr[MAX];               
-    int top = -1;               
-
-   
-    void push(int data) {
-        if (top >= MAX - 1) {
-            cout << "Stack Overflow" << endl;
-            return;
-        }
-        arr[++top] = data; 
-    }
-
-  
-    int pop() {
-        if (top < 0) {
-            cout << "Stack Underflow" << endl;
-            return -1;
-        }
-        return arr[top--]; 
-    }
-
-    
-    void peek() {
-        if (top < 0) {
-            cout << "Stack is empty" << endl;
-            return;
-        }
-        cout << arr[top] << endl; 
-    }
-
-    
-    bool isEmpty() {
-        return top == -1; 
-    }
-};
-*/
-
-
 
 //                              *** Stack using Linked List ***
 struct Node{

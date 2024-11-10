@@ -79,8 +79,8 @@ string postFix(string infix,Node *&top){
 
 int main(){
     Node *top = nullptr;
-    string str = "(a+b)*(c-d)";
-    // string str = "((x+y)*z/(w-v))";
+    // string str = "(a+b)*(c-d)";
+    string str = "((x+y)*z/(w-v))";
     cout<< "POSTFIX STRING: "<< postFix(str,top);
     cout << endl;
     return 0;

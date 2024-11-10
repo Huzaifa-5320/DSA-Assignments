@@ -4,8 +4,8 @@ using namespace std;
 int main()
 {
     int n = 3;
-    int I[n] = {1,2,3}; // Example initialization for I
-    int S[n] = {4,4,4}; // Example initialization for S
+    int I[n] = {1,2,3,4}; // Example initialization for I
+    int S[n] = {5,5,5,5}; // Example initialization for S
     int sum = 0;
 
     // Iterate from n-1 down to 0

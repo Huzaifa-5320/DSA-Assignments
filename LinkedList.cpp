@@ -123,22 +123,23 @@ int main(){
     second->next = third;
     third->next = fourth;
  
-    // viewList(head);
+    viewList(head);
 
     // insert(5,head);
     // viewList(head);
 
     append(5,head);
     append(6,head);
-    // viewList(head);
+    viewList(head);
 
-    // search(4,head);
+    search(4,head);
 
 
     deleteNode(1,head); // works as expected
     viewList(head);   
     deleteNode(5,head); // works as expected
     viewList(head);
+    // search(5,head);
 
     // Test Case
     // Node *testNode = NULL;
