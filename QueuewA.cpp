@@ -32,6 +32,7 @@ public:
         // If queue is empty, set both front and rear to 0
         if (front == -1) {
             front = 0;
+            rear =0;
         }
 
         // Move rear to the next position (circular increment)
