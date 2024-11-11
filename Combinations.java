@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Combinations {
+    
     public static void combinations(int currentBox, String n, int selectedItems, int totalItems, String asf) {
         if (currentBox > n.length()) {
             if (selectedItems == totalItems) {
